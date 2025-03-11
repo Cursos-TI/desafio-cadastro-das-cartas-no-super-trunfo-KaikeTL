@@ -4,9 +4,9 @@ int main(){
 // Váriaveis Separadas
 
 
-    char Estado1 [10], Codigo1[10], Nome_da_Cidade1[100], Estado2[10], Codigo2[10], Nome_da_Cidade2 [100];
-    int Populacao1, Pontos_Turisticos1, Populacao2, Pontos_Turisticos2;
-    float Area1, Pib1, Area2, Pib2;
+    char Estado1 [10], Codigo1[10], Nome_da_Cidade1[100],                Estado2[10], Codigo2[10], Nome_da_Cidade2 [100];
+    int Populacao1, Pontos_Turisticos1,                                  Populacao2, Pontos_Turisticos2;
+    float Area1, Pib1,                                                   Area2, Pib2;
 
     //carta 1
                      // Desativei as linhas de código do pib e da população, no sava diz que é pra fazer mas nas instruções falam q é so no proximo nivel, mas eu fiz.
