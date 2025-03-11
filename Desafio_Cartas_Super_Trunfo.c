@@ -70,7 +70,8 @@ int main(){
     //printf("PIB: %.5f\n", Pib1);
     printf("Número de Pontos Turísticos: %d\n\n", Pontos_Turisticos1);
 
-
+                                                                                     //%.nf limitando casas decimais
+                                                                                    
     printf("Carta 2 \n\n");
 
     printf("Estado: %s\n", Estado2); 
