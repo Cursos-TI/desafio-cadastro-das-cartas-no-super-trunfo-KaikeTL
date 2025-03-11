@@ -9,6 +9,8 @@ int main(){
     float Area1, Pib1, Area2, Pib2;
 
     //carta 1
+                     // Desativei as linhas de código do pib e da população, no sava diz que é pra fazer mas nas instruções falam q é so no proximo nivel, mas eu fiz.
+                    
 
     printf("Carta 1 \n\n");            
     printf("Digite o Estado: ");
@@ -20,14 +22,14 @@ int main(){
     printf("Digite o Nome da Cidade: ");
     scanf("%s",&Nome_da_Cidade1);
 
-    printf("Digite a População: ");
-    scanf("%d", &Populacao1);
+   // printf("Digite a População: ");
+   // scanf("%d", &Populacao1);
 
     printf("Digite a Área: ");
     scanf("%f", &Area1);
 
-    printf("Digite o Pib: ");
-    scanf("%f", &Pib1);
+   // printf("Digite o Pib: ");
+    //scanf("%f", &Pib1);
 
     printf("Digite o Numero de Pontos Turísticos: " );
     scanf("%d", &Pontos_Turisticos1);
@@ -45,14 +47,14 @@ int main(){
     printf("Digite o Nome da Cidade: ");
     scanf("%s",&Nome_da_Cidade2);
 
-    printf("Digite a População: ");
-    scanf("%d", &Populacao2);
+   // printf("Digite a População: ");
+    //scanf("%d", &Populacao2);
 
     printf("Digite a Área: ");
     scanf("%f", &Area2);
 
-    printf("Digite o Pib: ");
-    scanf("%f", &Pib2) ;
+    //printf("Digite o Pib: ");
+   // scanf("%f", &Pib2) ;
 
     printf("Digite o Numero de Pontos Turísticos: ");
     scanf("%d", &Pontos_Turisticos2 );
@@ -63,9 +65,9 @@ int main(){
     printf("Estado: %s\n", Estado1);
     printf("Código: %s\n", Codigo1);
     printf("Nome da Cidade: %s\n", Nome_da_Cidade1);
-    printf("População: %d\n", Populacao1);
-    printf("Área: %d" " km²\n" ,Area1);
-    printf("PIB: %.5f\n", Pib1);
+    //printf("População: %d\n", Populacao1);
+    printf("Área: %.2f" " km²\n" ,Area1);
+    //printf("PIB: %.5f\n", Pib1);
     printf("Número de Pontos Turísticos: %d\n\n", Pontos_Turisticos1);
 
 
@@ -74,43 +76,12 @@ int main(){
     printf("Estado: %s\n", Estado2); 
     printf("Código: %s\n", Codigo2);
     printf("Nome da Cidade: %s\n", Nome_da_Cidade2);
-    printf("População: %d\n", Populacao2);
-    printf("Área: %d" " km²\n" ,Area2);
-    printf("PIB: %.5f\n", Pib2);
+   // printf("População: %d\n", Populacao2);
+    printf("Área: %.2f" " km²\n" ,Area2);
+   // printf("PIB: %.5f\n", Pib2);
     printf("Número de Pontos Turísticos: %d\n", Pontos_Turisticos2);
 
     return 0;
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 }
