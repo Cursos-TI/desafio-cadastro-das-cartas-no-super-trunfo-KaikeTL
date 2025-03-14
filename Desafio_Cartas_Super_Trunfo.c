@@ -4,9 +4,28 @@ int main(){
 // Váriaveis Separadas
 
 
-    char Estado1 [10], Codigo1[10], Nome_da_Cidade1[100],                Estado2[10], Codigo2[10], Nome_da_Cidade2 [100];
-    int Populacao1, Pontos_Turisticos1,                                  Populacao2, Pontos_Turisticos2;
-    float Area1, Pib1,                                                   Area2, Pib2;
+    char Estado1 [10], Codigo1[10], Nome_da_Cidade1[100];              
+    char Estado2[10], Codigo2[10], Nome_da_Cidade2 [100];
+
+    int Populacao1, Pontos_Turisticos1;  
+    int Populacao2, Pontos_Turisticos2;
+
+    float Area1, Pib1, Area2, Pib2;
+    float PopuArea1, PopuArea2, PibPer1, PibPer2;
+   
+
+    //PopuArea1 e 2 = densidade populacional
+    //Pibper1 e 2 = pib per capta
+
+   PopuArea1 =  Populacao1 / Area1;
+   PopuArea2 =  Populacao2 / Area2;
+
+   PibPer1 =  Pib1 / Populacao1;
+   PibPer2 =  Pib2 / Populacao2;
+
+
+
+
 
     //carta 1
                      // Desativei as linhas de código do pib e da população, no sava diz que é pra fazer mas nas instruções falam q é so no proximo nivel, mas eu fiz.
@@ -22,14 +41,14 @@ int main(){
     printf("Digite o Nome da Cidade: ");
     scanf("%s",&Nome_da_Cidade1);
 
-   // printf("Digite a População: ");
-   // scanf("%d", &Populacao1);
+    printf("Digite a População: ");
+    scanf("%d", &Populacao1);
 
     printf("Digite a Área: ");
     scanf("%f", &Area1);
 
-   // printf("Digite o Pib: ");
-    //scanf("%f", &Pib1);
+    printf("Digite o Pib: ");
+    scanf("%f", &Pib1);
 
     printf("Digite o Numero de Pontos Turísticos: " );
     scanf("%d", &Pontos_Turisticos1);
@@ -47,17 +66,26 @@ int main(){
     printf("Digite o Nome da Cidade: ");
     scanf("%s",&Nome_da_Cidade2);
 
-   // printf("Digite a População: ");
-    //scanf("%d", &Populacao2);
+    printf("Digite a População: ");
+    scanf("%d", &Populacao2);
 
     printf("Digite a Área: ");
     scanf("%f", &Area2);
 
-    //printf("Digite o Pib: ");
-   // scanf("%f", &Pib2) ;
+    printf("Digite o Pib: ");
+    scanf("%f", &Pib2) ;
 
     printf("Digite o Numero de Pontos Turísticos: ");
     scanf("%d", &Pontos_Turisticos2 );
+
+
+
+
+////////////////////////////////////////////////////////////////////////////
+
+
+
+
 
 
     printf("\n\nCarta 1 \n\n");
@@ -65,10 +93,19 @@ int main(){
     printf("Estado: %s\n", Estado1);
     printf("Código: %s\n", Codigo1);
     printf("Nome da Cidade: %s\n", Nome_da_Cidade1);
-    //printf("População: %d\n", Populacao1);
+    printf("População: %d\n", Populacao1);
     printf("Área: %.2f" " km²\n" ,Area1);
-    //printf("PIB: %.5f\n", Pib1);
-    printf("Número de Pontos Turísticos: %d\n\n", Pontos_Turisticos1);
+    printf("PIB: %.2f\n", Pib1);
+    printf("Número de Pontos Turísticos: %d\n", Pontos_Turisticos1);
+    printf("Densidade Populacional: %.2f\n", PopuArea1);
+    printf("PIB per Capita: %.2f\n\n", PibPer1);
+    
+
+
+
+
+
+
 
                                                                                      //%.nf limitando casas decimais
                                                                                     
@@ -77,10 +114,12 @@ int main(){
     printf("Estado: %s\n", Estado2); 
     printf("Código: %s\n", Codigo2);
     printf("Nome da Cidade: %s\n", Nome_da_Cidade2);
-   // printf("População: %d\n", Populacao2);
+    printf("População: %d\n", Populacao2);
     printf("Área: %.2f" " km²\n" ,Area2);
-   // printf("PIB: %.5f\n", Pib2);
+    printf("PIB: %.2f\n", Pib2);
     printf("Número de Pontos Turísticos: %d\n", Pontos_Turisticos2);
+    printf("Densidade Populacional: %.2f\n", PopuArea2);
+    printf("PIB per Capita: %.2f\n\n", PibPer2);
 
     return 0;
 
