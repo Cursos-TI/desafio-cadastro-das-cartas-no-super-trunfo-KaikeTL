@@ -13,6 +13,14 @@ int main(){
     float Area1, Pib1, Area2, Pib2;
     float PopuArea1, PopuArea2;
     float pibper1, pibper2;
+
+    float superpoder1; 
+    float superpoder2;
+
+    superpoder1 = Area1 + Pib1 + pibper1 + Pontos_Turisticos1 + (PopuArea1 * -1);
+
+    superpoder2 = Area2 + Pib2 + pibper2 + Pontos_Turisticos2 + (PopuArea2 * -1);
+
    
 
     //PopuArea1 e 2 = densidade populacional
@@ -107,6 +115,7 @@ int main(){
     printf("Número de Pontos Turísticos: %d\n", Pontos_Turisticos1);
     printf("Densidade Populacional: %.2f hab/Km² \n", PopuArea1);
     printf("PIB per Capita: %.2f Reais \n", pibper1);
+
     
     
 
@@ -129,6 +138,15 @@ int main(){
     printf("Número de Pontos Turísticos: %d\n", Pontos_Turisticos2);
     printf("Densidade Populacional: %.2f hab/Km² \n", PopuArea2);
     printf("PIB per capita: %.2f Reais\n", pibper2);
+
+    printf("\n\nComparação das Cartas: \n");
+    printf("População: %d Ganhou\n", Populacao1 > Populacao2);
+    printf("Área: %d Ganhou\n", Area1 > Area2);
+    printf("PIB: %d Gannhou\n", Pib1 > Pib2);
+    printf("Pontos Turísticos: %d Ganhou\n", Pontos_Turisticos1 > Pontos_Turisticos2);
+    printf("Densidade Populacional: %d Ganhou\n", PopuArea1 > PopuArea2);
+    printf("PIB per Capita: %d Ganhou\n", pibper1 > Pib2);
+    printf("Super Poder: %d Ganhou\n", superpoder1 > superpoder2);
     
 
     return 0;
